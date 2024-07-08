@@ -2,12 +2,42 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import CartProdList from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Footer from './Footer';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "Cart",
+    element: <CartProdList />,
+  },
+  {
+    path: "Checkout",
+    element: <Checkout />,
+  },
+  {
+    path: "Footer",
+    element: <Footer />,
+  },
+  {
+    path: "Product",
+    element: <App />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
