@@ -1,5 +1,5 @@
 import React from 'react';
-import Check from './images/tick-04.svg';
+import Tick from './images/tick-04.svg';
 
 const Banner = () => {
   return (
@@ -12,10 +12,10 @@ const Banner = () => {
       </div>
       <div className='Features m-container'>
         <ul>
-          <li>Convenient Checkout Process <img src={Check} alt='Check Mark' /></li>
-          <li>Quick Customer Service <img src={Check} alt='Check Mark' /></li>
-          <li>Product Quality <img src={Check} alt='Check Mark' /></li>
-          <li>Fast Delivery <img src={Check} alt='Check Mark' /></li>
+          <li>Convenient Checkout Process <img className='Tick' src={Tick} alt='Check Mark' /></li>
+          <li>Quick Customer Service <img className='Tick' src={Tick} alt='Check Mark' /></li>
+          <li>Product Quality <img className='Tick' src={Tick} alt='Check Mark' /></li>
+          <li>Fast Delivery <img className='Tick' src={Tick} alt='Check Mark' /></li>
         </ul>
         <hr />
       </div>

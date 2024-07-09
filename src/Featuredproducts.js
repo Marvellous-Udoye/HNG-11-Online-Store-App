@@ -49,9 +49,9 @@ const Product = ({ product }) => {
         <img src={product.img} className='product-image' alt='Product' />
       </div>
       <div className='product-details'>
-        <p>{product.name}</p>
+        <p className='product-name'>{product.name}</p>
         <div className='price'>
-          <h3>{product.price}</h3>
+          <h3 className='product-price'>{product.price}</h3>
           <img src={like} className='like' alt='Like Product' />
         </div>
         <button className='active-button add-to-cart'>

@@ -12,16 +12,16 @@ const Footer = () => {
       <div className="Subscribe">
         <div className="Newsletter m-container">
           <p>Subscribe to our newsletter to get updates on our latest offers!</p>
-          <div className='Form'>
+          <form className='Form'>
             <input id="Email" type="email" placeholder="Enter your Email Address" required />
             <button htmlFor="Email">Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
       <footer>
         <div className="Outro m-container">
           <div className="links">
-            <div>
+            <div className='help'>
               <p className='footer-p'>Let Us Help You</p>
               <p>Accessibility Statement</p>
               <p>Your Orders</p>
@@ -33,7 +33,7 @@ const Footer = () => {
               <p>Cookie Settings</p>
               <p>Help Center</p>
             </div>
-            <div>
+            <div className='about'>
               <p className='footer-p'>About</p>
               <p>Contact Us</p>
               <p>Careers</p>
@@ -41,33 +41,36 @@ const Footer = () => {
               <p>Customers Reviews</p>
               <p>FAQs</p>
             </div>
-            <div>
+
+          </div>
+          <div className='f-small-screen'>
+            <div className='support'>
               <p className='footer-p'>Support</p>
               <p>Showrooms</p>
               <p>Customer Service</p>
               <p>Affiliates</p>
               <p>After Service Sales</p>
             </div>
-          </div>
-          <div className="follow">
-            <div className="social-media">
-              <p>Follow Us on Social Media</p>
-              <div className='social-media-apps'>
-                <img src={Twitter} alt='Twitter' />
-                <img src={Fcb} alt='Facebook' />
-                <img src={Instagram} alt='Instagram' />
+            <div className="follow">
+              <div className="social-media">
+                <p>Follow Us on Social Media</p>
+                <div className='social-media-apps'>
+                  <img src={Twitter} alt='Twitter' />
+                  <img src={Fcb} alt='Facebook' />
+                  <img src={Instagram} alt='Instagram' />
+                </div>
+              </div>
+              <div className="download">
+                <h4>Download our app</h4>
+                <div className='apps'>
+                  <img src={google} alt='Download on Google Store' />
+                  <img src={apple} alt='Download on Apple Store' />
+                </div>
               </div>
             </div>
-            <div className="download">
-              <h4>Download our app</h4>
-              <div className='apps'>
-                <img src={google} alt='Download on Google Store' />
-                <img src={apple} alt='Download on Apple Store' />
-              </div>
+            <div className="logo">
+              <img src={logo} alt='Logo' />
             </div>
-          </div>
-          <div className="logo">
-            <img src={logo} alt='Logo' />
           </div>
         </div>
         <hr className='m-container' />
