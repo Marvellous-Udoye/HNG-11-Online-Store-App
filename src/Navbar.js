@@ -18,10 +18,7 @@ const Navbar = () => {
       <header className="App-header m-container-header">
         <div><img src={logo} className="App-logo" alt="logo" /></div>
         <div className='Search'>
-          <div className='Seach-full-bar'>
-          <img className='Search-icon' src={Search} alt='Search icon' />
           <input id='Search' placeholder='Search for all accessories' type='text' required></input>
-          </div>
           <select>
             <option>All Categories</option>
           </select>

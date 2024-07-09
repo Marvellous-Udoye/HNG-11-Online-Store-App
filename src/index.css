@@ -83,7 +83,7 @@ input:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 1%;
+  padding: 16px;
   overflow: none;
 }
 
@@ -92,7 +92,7 @@ input:focus {
 }
 
 .Search input {
-  padding: 8% 10% 8% 8%;
+  padding: 12px 140px 12px 40px;
   border-radius: 12px 0 0 12px;
   border: 1px solid #2972FF;
   border-right: none;
@@ -101,8 +101,7 @@ input:focus {
 .Search select {
   border: 1px solid #2972FF;
   border-left: none;
-  padding-right: 10%;
-  margin-left: 8%;
+  padding-right: 12px;
 }
 
 .Search select:focus {
@@ -218,22 +217,21 @@ input:focus {
     padding: 0.5rem 1rem;
     padding-top: 5%;
   }
+  
+  .Search {
+    display: none;
+  }
 
   .Search input {
-    padding: 8% 10% 8% 8%;
+    padding: 14px 100px 14px 12px;
   }
 
   .Search select {
-    padding-right: 10%;
-    margin-left: 8%;
+    padding: 10px;
   }
 
   .Search button {
     padding: 12px 20px;
-  }
-
-  .Search {
-    display: none;
   }
 
   .Nav-bar ul {
@@ -252,6 +250,7 @@ input:focus {
     padding: 10px 15px;
   }
 
+  
   .Search {
     width: 50%;
   }
@@ -265,6 +264,10 @@ input:focus {
     flex-direction: row;
     position: relative;
     padding-top: 5%;
+  }
+
+  .Search {
+    display: none;
   }
 
   .menu-icon {
@@ -354,7 +357,6 @@ input:focus {
   }
 
 }
-
 /*-------------Home-page-header-end------------------------- */
 
 
@@ -473,7 +475,6 @@ input:focus {
     margin: auto 4%;
   }
 }
-
 /* -------------------------------Home page-Banner-end--------------------------------------- */
 
 
@@ -609,7 +610,6 @@ input:focus {
     margin: 16px -5%;
   }
 }
-
 /* ------------------------------------------Featured-product-end----------------------------------- */
 
 
@@ -1737,5 +1737,4 @@ input:focus {
     width: 100%;
   }
 }
-
 /* -------------------------------------End of Checkout.js----------------------------- */
