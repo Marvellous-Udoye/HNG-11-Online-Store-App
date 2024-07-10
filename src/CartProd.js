@@ -23,9 +23,9 @@ const CartPage = () => {
   return (
     <div className="cart-page">
       <main className="cart-container">
-        <p className='stage-cart'><span className='go=to-home'>Home</span> <span>/</span> Cart</p>
-        <h1>Cart</h1>
-        <div className="progress-bar">
+        <p className='stage-cart stage-cart-cart'><span className='go=to-home'>Home</span> <span>/</span> Cart</p>
+        <h1 className='Cart'>Cart</h1>
+        <div className="progress-bar cart-progress-bar">
           <div className="step active"></div>
           <div className="step"></div>
           <div className="step"></div>
