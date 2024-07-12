@@ -26,12 +26,12 @@ const CartPage = () => {
         <p className='stage-cart stage-cart-cart'><span className='go=to-home'>Home</span> <span>/</span> Cart</p>
         <h1 className='Cart'>Cart</h1>
         <div className="progress-bar cart-progress-bar">
-          <div className="step active"></div>
-          <div className="step"></div>
-          <div className="step"></div>
+          <div className="checkout-step active"></div>
+          <div className="checkout-step not-active"></div>
+          <div className="checkout-step not-active"></div>
           <div className='step-num-container'>
-            <span className="step-num">1</span>
-            <span className="step-num">2</span>
+            <span className="checkout-step-num">1</span>
+            <span className="checkout-step-num">2</span>
           </div>
         </div>
         <div className='cartProd-container'>
@@ -64,7 +64,7 @@ const CartPage = () => {
             <p>Sub-Total <span>₦{calculateTotal().toLocaleString()}</span></p>
             <p>Shipping Fee <span>₦83,000</span></p>
             <hr />
-            <div className='coupon'> 
+            <div className='coupon'>
               <input placeholder='Coupon Code' id='coupon' type="text" />
               <button>Apply</button>
             </div>

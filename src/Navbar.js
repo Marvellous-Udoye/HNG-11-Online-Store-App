@@ -44,7 +44,7 @@ const Navbar = () => {
               <li>Instagram</li>
             </ul>
           </nav>
-          <button className='add-to-cart-button'><img src={cart} className="Cart-logo" alt="cart" /><Link to='/Cart'>My cart<p>5</p></Link></button>
+          <button data-count="5" className='add-to-cart-button'><img src={cart} className="Cart-logo" alt="cart" /><Link to='/Cart'>My cart</Link></button>
         </div>
       </header>
     </div>

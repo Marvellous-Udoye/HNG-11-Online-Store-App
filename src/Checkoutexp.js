@@ -6,7 +6,7 @@ import productImage5 from './images/image 23.svg';
 
 const CheckoutPage = () => {
   const products = [
-    { name: "HISENSE 100 INCHHISENSE 100 INCH U7K SERIES ULED 4K", price: 3900990, quantity: 1, image: productImage1 },
+    { name: "HISENSE 100 INCH U7K SERIES ULED 4K", price: 3900990, quantity: 1, image: productImage1 },
     { name: "HISENSE 20KG ICE MAKER ICM2011", price: 321800, quantity: 2, image: productImage2 },
     { name: "MAXI E17000KWH GENERATOR 21.25 KVA", price: 3597900, quantity: 1, image: productImage3 },
     { name: "HUAWEI -M 2.5kW POWER  INVERTER", price: 4182900, quantity: 1, image: productImage4 },
@@ -37,27 +37,27 @@ const CheckoutPage = () => {
             <form>
               <div className="checkout-form-group">
                 <label>Full Name <span>*</span></label>
-                <input type="text" name="name" placeholder="Darwin Nunez" />
+                <input id="checkout-input" type="text" name="name" placeholder="Darwin Nunez" required/>
               </div>
               <div className="checkout-form-group">
                 <label>Email Address <span>*</span></label>
-                <input type="email" name="email" placeholder="Darwin Nunez@gmail.com" />
+                <input id="checkout-input" type="email" name="email" placeholder="Darwin Nunez@gmail.com" required/>
               </div>
               <div className="checkout-form-group">
                 <label>Phone Number <span>*</span></label>
-                <input type="tel" name="phone" placeholder="+44   |   (555) 123-4567" />
+                <input id="checkout-input" type="tel" name="phone" placeholder="+44   |   (555) 123-4567" required/>
               </div>
               <div className="checkout-form-group">
                 <label>Address <span>*</span></label>
-                <input type="text" name="address" placeholder="Block 12C, West Minister Area" />
+                <input id="checkout-input" type="text" name="address" placeholder="Block 12C, West Minister Area" required/>
               </div>
               <div className="checkout-form-group">
                 <label>City <span>*</span></label>
-                <input type="text" name="city" placeholder="Liverpool" />
+                <input id="checkout-input" type="text" name="city" placeholder="Liverpool" required/>
               </div>
               <div className="checkout-form-group">
                 <label>Country <span>*</span></label>
-                <input type="text" name="country" placeholder="England" />
+                <input id="checkout-input" type="text" name="country" placeholder="England" required/>
               </div>
               <div className="checkout-form-group">
                 <label>Additional Information</label>
@@ -87,7 +87,7 @@ const CheckoutPage = () => {
               <button>Apply</button>
             </div>
             <p className='sub-t-t-t'>Total Price: <span className='sub-t-span sub-t-t'>₦{(calculateTotal() + 3300).toLocaleString()}</span></p>
-            <button className='payment-button'>Proceed to Payment</button>
+            <button for="checkout-input" className='payment-button'>Proceed to Payment</button>
           </div>
         </div>
       </main>

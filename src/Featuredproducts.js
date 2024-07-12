@@ -13,6 +13,7 @@ import product12 from './images/image 12.svg';
 import like from './images/Vector.svg';
 import cart from './images/shopping-basket-01.svg';
 import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
 
 const products = [
   { img: product1, name: 'BRUHM BLACK AC BAS-09ICQB', price: '₦298,490' },
@@ -58,6 +59,9 @@ const Product = ({ product }) => {
           <img src={cart} className="cart-logo" alt="cart" /><Link to='/Cart'>Add to Cart</Link>
         </button>
       </div>
+
+      <script src='script.js'></script>
+
     </div>
   );
 }

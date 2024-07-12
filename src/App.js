@@ -9,7 +9,11 @@ import { Helmet } from 'react-helmet';
 function App() {
   return (
     <div className="App">
-      <Helmet>Timbu Cloud Shop-Home Page</Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Timbu Cloud Shop</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Navbar />
       <Banner />
       <Feat />
