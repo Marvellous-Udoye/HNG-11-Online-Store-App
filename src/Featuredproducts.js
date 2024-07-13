@@ -12,8 +12,8 @@ import product11 from './images/image 11.svg';
 import product12 from './images/image 12.svg';
 import like from './images/Vector.svg';
 import cart from './images/shopping-basket-01.svg';
-import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const products = [
   { img: product1, name: 'BRUHM BLACK AC BAS-09ICQB', price: '₦298,490' },
@@ -29,6 +29,10 @@ const products = [
   { img: product11, name: 'LMAXI TOASTER 2 SLICES', price: '₦120,000' },
   { img: product12, name: 'Jinko 625W Monofacial Solar Panel', price: '₦200,000' }
 ];
+
+// function Gotocart() {
+//   const gotocart = useNavigate();
+// }
 
 const Feat = () => {
   return (
@@ -56,12 +60,9 @@ const Product = ({ product }) => {
           <img src={like} className='like' alt='Like Product' />
         </div>
         <button className='active-button add-to-cart'>
-          <img src={cart} className="cart-logo" alt="cart" /><Link to='/Cart'>Add to Cart</Link>
+          <img src={cart} className="cart-logo" alt="cart" /> Add to Cart
         </button>
       </div>
-
-      <script src='script.js'></script>
-
     </div>
   );
 }

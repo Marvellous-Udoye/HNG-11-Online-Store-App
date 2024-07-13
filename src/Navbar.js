@@ -1,7 +1,7 @@
 import logo from './images/Logo.svg';
 import cart from './images/shopping-basket-01.svg';
 import Dropdown from './images/dropdown.svg';
-import Search from './images/Icon.svg'
+import Search from './images/Icon.svg';
 import { useState } from 'react';
 import { ReactComponent as MenuIcon } from './images/menu-02.svg';
 import { Link } from "react-router-dom";
@@ -25,7 +25,7 @@ const Navbar = () => {
           <button for="Search">Search</button>
         </div>
         <div className='Nav-bar'>
-          <button><Link to='/Product'>Products</Link></button>
+          <button>Products</button>
           <button>Contact Us</button>
         </div>
         <div className='toggle-menu'>

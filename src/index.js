@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Product from './pages/Product';
 import CartProdList from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Footer from './Footer';
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: "Product",
-    element: <App />,
+    element: <Product />,
   },
 ]);
 
