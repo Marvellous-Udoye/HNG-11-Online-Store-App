@@ -12,4 +12,4 @@ Timbu Cloud Shop is a dynamic web application developed during the HNG 11 Stage 
 - React: Building reusable components and managing the application state.
 - RESTful APIs: Integrating Timbu APIs for dynamic content.
 
-Visit Timbu Cloud Shop @https://app.netlify.com/sites/genuine-jalebi-f35eb9/
+Visit Timbu Cloud Shop @https://timbu-cloud-app.netlify.app/
