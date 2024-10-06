@@ -1928,3 +1928,53 @@ select::after {
 }
 
 /* -------------------------------------End of Checkout.js----------------------------- */
+
+
+
+
+
+.product-image-card {
+  position: relative;
+}
+
+.product-image-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.view-product-button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 25px;
+  white-space: nowrap;
+  background-color: #fff;
+  color: #2972FF;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;  
+  border: none;
+  font-family: "Poppins", sans-serif;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .view-product-button {
+  display: block;
+  transition: 0.5s ease;
+}
+
+.product-card:hover .product-image-card img {
+  transform: scale(1.03);
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.product-image-card button:hover {
+  background-color: #fff;
+}
+

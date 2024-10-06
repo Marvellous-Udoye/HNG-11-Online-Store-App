@@ -7,10 +7,10 @@ import productImage5 from './images/image 23.svg';
 const CheckoutPage = () => {
   const products = [
     { name: "HISENSE 100 INCH U7K SERIES ULED 4K", price: 3900990, quantity: 1, image: productImage1 },
-    { name: "HISENSE 20KG ICE MAKER ICM2011", price: 321800, quantity: 2, image: productImage2 },
+    { name: "HISENSE 20KG ICE MAKER ICM2011", price: 321800, quantity: 1, image: productImage2 },
     { name: "MAXI E17000KWH GENERATOR 21.25 KVA", price: 3597900, quantity: 1, image: productImage3 },
     { name: "HUAWEI -M 2.5kW POWER  INVERTER", price: 4182900, quantity: 1, image: productImage4 },
-    { name: "BINATONE BLENDER", price: 146970, quantity: 3, image: productImage5 },
+    { name: "BINATONE BLENDER", price: 146970, quantity: 1, image: productImage5 },
   ];
 
   const calculateTotal = () => {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const FetchAndSaveJson = () => {
+const FetchJson = () => {
   const [products, setProducts] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -15,7 +15,9 @@ const FetchAndSaveJson = () => {
         }
 
         const result = await response.json();
-        setProducts(result);
+
+        console.log(result)
+        setProducts(result);        
 
         // Convert to JSON and download
         const json = JSON.stringify(result, null, 2);
@@ -53,7 +55,7 @@ const FetchAndSaveJson = () => {
   );
 };
 
-export default FetchAndSaveJson;
+export default FetchJson;
 
 
 
